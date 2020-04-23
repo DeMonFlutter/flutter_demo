@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/PageBar.dart';
+import 'package:flutter_demo/widget/PageBar.dart';
 
 /// @author DeMon
 /// Created on 2020/4/23.
@@ -7,7 +7,7 @@ import 'package:flutter_demo/PageBar.dart';
 /// Desc:
 class TimerPage extends StatefulWidget {
   @override
-  createState() => new TimerPageState();
+  createState() => TimerPageState();
 }
 
 class TimerPageState extends State<TimerPage> {
@@ -15,23 +15,23 @@ class TimerPageState extends State<TimerPage> {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new PageBar("Timer"),
-      body: new Center(
-        child: new Column(
+    return Scaffold(
+      appBar: PageBar("Timer"),
+      body: Center(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            new Text("You have Pressed the button this many times"),
-            new Text(
+            Text("You have Pressed the button this many times"),
+            Text(
               '$count',
               style: Theme.of(context).textTheme.display1,
             )
           ],
         ),
       ),
-      floatingActionButton: new FloatingActionButton(
+      floatingActionButton: FloatingActionButton(
         onPressed: _fbPressed,
-        child: new Icon(Icons.add_box),
+        child: Icon(Icons.add_box),
       ),
     );
   }
