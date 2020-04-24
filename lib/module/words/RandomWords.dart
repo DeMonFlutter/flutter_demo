@@ -19,42 +19,14 @@ class RandomWordsState extends State<RandomWords> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Startup Name Generator'),
-        actions: <Widget>[IconButton(icon: Icon(Icons.list), onPressed: _pushSaved)],
+        actions: <Widget>[IconButton(icon: Icon(Icons.list), onPressed: () => Navigator.pushNamed(context, "SaveWords", arguments: _saved))],
       ),
       body: _buildSuggestions(),
       floatingActionButton: FloatingActionButton(
-        onPressed: null,
+        onPressed: () => Navigator.pop(context, "我是返回值"),
         child: Icon(Icons.add),
       ),
     );
-  }
-
-  void showMsg() {}
-
-  void _pushSaved() {
-    Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-      final tiles = _saved.map(
-        (pair) {
-          return ListTile(
-            title: Text(
-              pair.asPascalCase,
-              style: _biggerFont,
-            ),
-          );
-        },
-      );
-      final divided = ListTile.divideTiles(
-        context: context,
-        tiles: tiles,
-      ).toList();
-
-      return Scaffold(
-        appBar: AppBar(
-          title: Text('Saved Suggestions'),
-        ),
-        body: ListView(children: divided),
-      );
-    }));
   }
 
   Widget _buildSuggestions() {
