@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var list = <Widget>[];
     Routes.routes.forEach((e, s) {
-      if (e != "/") {
+      if (!(e == "/" || e == "SaveWords")) {
         list.add(Button(context, e));
       }
     });

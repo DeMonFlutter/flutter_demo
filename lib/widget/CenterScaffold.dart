@@ -9,8 +9,9 @@ import 'PageBar.dart';
 class CenterScaffold extends Scaffold {
   CenterScaffold(String title, List<Widget> childrens)
       : super(
-            appBar: PageBar(title),
-            body: Padding(
+          appBar: PageBar(title),
+          body: SingleChildScrollView(
+            child: Padding(
               padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 24),
               child: Center(
                 child: Column(
@@ -18,5 +19,7 @@ class CenterScaffold extends Scaffold {
                   children: childrens,
                 ),
               ),
-            ));
+            ),
+          ),
+        );
 }

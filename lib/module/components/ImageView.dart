@@ -20,14 +20,10 @@ class ImageViewPageState extends State<ImageViewPage> {
       Image(image: AssetImage("images/avatar.png"), width: 100.0, color: Colors.blue, colorBlendMode: BlendMode.difference),
       Image(image: AssetImage("images/avatar.png"), width: 100.0, height: 300.0, repeat: ImageRepeat.repeatY)
     ];
-    return Scaffold(
-      appBar: PageBar("Image"),
-      body: SingleChildScrollView(
-        child: Column(
-            children: imgs.map((e) {
+    return CenterScaffold(
+        "ImageView",
+        imgs.map((e) {
           return Row(children: <Widget>[Padding(padding: EdgeInsets.all(16.0), child: SizedBox(child: e))]);
-        }).toList()),
-      ),
-    );
+        }).toList());
   }
 }

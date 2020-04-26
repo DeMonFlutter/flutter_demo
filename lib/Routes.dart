@@ -5,8 +5,12 @@ import 'package:flutter_demo/module/components/Show.dart';
 import 'package:flutter_demo/module/Timer.dart';
 
 import 'module/Home.dart';
+import 'module/components/Container.dart';
 import 'module/components/EditText.dart';
+import 'module/components/Progress.dart';
+import 'module/components/scaffold/Scaffold.dart';
 import 'module/components/Texts.dart';
+import 'module/components/Warp.dart';
 import 'module/words/RandomWords.dart';
 import 'module/words/SaveWords.dart';
 
@@ -24,6 +28,10 @@ class Routes {
     "Texts": (context) => TextsPage(),
     "ImageView": (context) => ImageViewPage(),
     "CheckBox": (context) => CheckBoxPage(),
-    "EditText": (context) => EditTextPage()
+    "EditText": (context) => EditTextPage(),
+    "Progress": (context) => ProgressPage(),
+    "Warp": (context) => WarpPage(),
+    "Container": (context) => ContainerPage(),
+    "Scaffold": (context) => ScaffoldPage(),
   };
 }
