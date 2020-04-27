@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/module/components/CheckBox.dart';
 import 'package:flutter_demo/module/components/ImageView.dart';
+import 'package:flutter_demo/module/components/ListView.dart';
 import 'package:flutter_demo/module/components/Show.dart';
 import 'package:flutter_demo/module/Timer.dart';
 
 import 'module/Home.dart';
 import 'module/components/Container.dart';
+import 'module/components/CustomScrollView.dart';
 import 'module/components/EditText.dart';
+import 'module/components/GridView.dart';
 import 'module/components/Progress.dart';
+import 'module/components/ScrollController.dart';
+import 'module/components/WillPopScope.dart';
 import 'module/components/scaffold/Scaffold.dart';
 import 'module/components/Texts.dart';
 import 'module/components/Warp.dart';
@@ -33,5 +38,10 @@ class Routes {
     "Warp": (context) => WarpPage(),
     "Container": (context) => ContainerPage(),
     "Scaffold": (context) => ScaffoldPage(),
+    "ListView": (context) => ListViewPage(),
+    "GridView": (context) => GridViewPage(),
+    "CustomScrollView": (context) => CustomScrollViewPage(),
+    "ScrollController": (context) => ScrollControllerPage(),
+    "WillPopScope": (context) => WillPopScopePage(),
   };
 }

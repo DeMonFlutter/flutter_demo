@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/Routes.dart';
 import 'package:flutter_demo/widget/CenterScaffold.dart';
+import 'package:flutter_demo/widget/PageBar.dart';
 
 import '../widget/Button.dart';
 
@@ -11,12 +12,27 @@ import '../widget/Button.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var list = <Widget>[];
+    var list = <String>[];
     Routes.routes.forEach((e, s) {
       if (!(e == "/" || e == "SaveWords")) {
-        list.add(Button(context, e));
+        list.add(e);
       }
     });
-    return CenterScaffold("Home", list);
+    return Scaffold(
+      appBar: PageBar("Home"),
+      body: GridView.builder(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          childAspectRatio: 3.5,
+        ),
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: EdgeInsets.all(5.0),
+            child: Button(context, list[index]),
+          );
+        },
+        itemCount: list.length,
+      ),
+    );
   }
 }
