@@ -4,6 +4,9 @@ import 'package:flutter_demo/module/components/ImageView.dart';
 import 'package:flutter_demo/module/components/ListView.dart';
 import 'package:flutter_demo/module/components/Show.dart';
 import 'package:flutter_demo/module/Timer.dart';
+import 'package:flutter_demo/module/provider/providerpub/ChangeMessage.dart';
+import 'package:flutter_demo/module/provider/providerpub/Message.dart';
+import 'package:provider/provider.dart';
 
 import 'module/Home.dart';
 import 'module/components/Container.dart';
@@ -16,6 +19,9 @@ import 'module/components/WillPopScope.dart';
 import 'module/components/scaffold/Scaffold.dart';
 import 'module/components/Texts.dart';
 import 'module/components/Warp.dart';
+import 'module/components/sharedata/ShareDataPage.dart';
+import 'module/provider/cart/Cart.dart';
+import 'module/provider/providerpub/MsgModel.dart';
 import 'module/words/RandomWords.dart';
 import 'module/words/SaveWords.dart';
 
@@ -27,7 +33,7 @@ class Routes {
   static final routes = {
     "/": (context) => HomePage(),
     "Words": (context) => RandomWords(),
-    "SaveWords": (context) => SaveWordsPage(ModalRoute.of(context).settings.arguments),
+    "/SaveWords": (context) => SaveWordsPage(ModalRoute.of(context).settings.arguments),
     "Timer": (context) => TimerPage(),
     "Show": (context) => ShowPage(),
     "Texts": (context) => TextsPage(),
@@ -43,5 +49,11 @@ class Routes {
     "CustomScrollView": (context) => CustomScrollViewPage(),
     "ScrollController": (context) => ScrollControllerPage(),
     "WillPopScope": (context) => WillPopScopePage(),
+    "ShareData": (context) => ShareDataPage(),
+    "Cart": (context) => CartPage(),
+    "Message": (context) => MessagePage(),
+    "/ChangeMessage": (context) => ChangeMessagePage(),
   };
+
+  static final provides = [ChangeNotifierProvider(create: (_) => MsgModel())];
 }

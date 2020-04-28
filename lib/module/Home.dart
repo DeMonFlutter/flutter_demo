@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var list = <String>[];
     Routes.routes.forEach((e, s) {
-      if (!(e == "/" || e == "SaveWords")) {
+      if (!e.startsWith("/")) {
         list.add(e);
       }
     });

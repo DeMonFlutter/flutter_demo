@@ -19,7 +19,7 @@ class RandomWordsState extends State<RandomWords> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Startup Name Generator'),
-        actions: <Widget>[IconButton(icon: Icon(Icons.list), onPressed: () => Navigator.pushNamed(context, "SaveWords", arguments: _saved))],
+        actions: <Widget>[IconButton(icon: Icon(Icons.list), onPressed: () => Navigator.pushNamed(context, "/SaveWords", arguments: _saved))],
       ),
       body: _buildSuggestions(),
       floatingActionButton: FloatingActionButton(
