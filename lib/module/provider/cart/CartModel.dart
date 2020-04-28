@@ -1,7 +1,5 @@
 import 'dart:collection';
-
 import 'package:flutter/material.dart';
-import 'Item.dart';
 
 /// @author DeMon
 /// Created on 2020/4/28.
@@ -23,4 +21,11 @@ class CartModel extends ChangeNotifier {
     // 通知监听器（订阅者），重新构建InheritedProvider， 更新状态。
     notifyListeners();
   }
+}
+
+class Item {
+  Item(this.price, this.count);
+
+  double price; //商品单价
+  int count; // 商品份数
 }

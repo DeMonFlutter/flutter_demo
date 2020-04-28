@@ -4,7 +4,6 @@ import 'package:flutter_demo/widget/CenterScaffold.dart';
 import 'ChangeNotifierProvider.dart';
 import 'Consumer.dart';
 import 'CartModel.dart';
-import 'Item.dart';
 
 /// @author DeMon
 /// Created on 2020/4/23.
