@@ -6,7 +6,7 @@ import 'package:flutter_demo/module/components/Show.dart';
 import 'package:flutter_demo/module/Timer.dart';
 import 'package:flutter_demo/module/provider/providerpub/ChangeMessage.dart';
 import 'package:flutter_demo/module/provider/providerpub/Message.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_demo/module/theme/ThemeChange.dart';
 
 import 'module/Home.dart';
 import 'module/components/Container.dart';
@@ -21,7 +21,6 @@ import 'module/components/Texts.dart';
 import 'module/components/Warp.dart';
 import 'module/components/sharedata/ShareDataPage.dart';
 import 'module/provider/cart/Cart.dart';
-import 'module/provider/providerpub/MsgModel.dart';
 import 'module/words/RandomWords.dart';
 import 'module/words/SaveWords.dart';
 
@@ -53,7 +52,6 @@ class Routes {
     "Cart": (context) => CartPage(),
     "Message": (context) => MessagePage(),
     "/ChangeMessage": (context) => ChangeMessagePage(),
+    "Theme": (context) => ThemeChangePage(),
   };
-
-  static final provides = [ChangeNotifierProvider(create: (_) => MsgModel())];
 }
