@@ -9,6 +9,7 @@ import 'package:flutter_demo/module/provider/providerpub/Message.dart';
 import 'package:flutter_demo/module/theme/ThemeChange.dart';
 
 import 'module/Home.dart';
+import 'module/components/AsynUI.dart';
 import 'module/components/Container.dart';
 import 'module/components/CustomScrollView.dart';
 import 'module/components/EditText.dart';
@@ -53,5 +54,6 @@ class Routes {
     "Message": (context) => MessagePage(),
     "/ChangeMessage": (context) => ChangeMessagePage(),
     "Theme": (context) => ThemeChangePage(),
+    "AsynUI": (context) => AsynUIPage(),
   };
 }
