@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/widget/CenterScaffold.dart';
-import 'package:flutter_demo/widget/PageBar.dart';
 
 /// @author DeMon
 /// Created on 2020/4/23.

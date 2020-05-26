@@ -59,6 +59,15 @@ class AsynUIPageState extends State<AsynUIPage> {
 
   @override
   Widget build(BuildContext context) {
-    return CenterScaffold("AsynUI", <Widget>[futureBuilder, streamBuilder]);
+    return CenterScaffold("AsynUI", <Widget>[
+      futureBuilder,
+      streamBuilder,
+      RaisedButton(
+        child: Text('Stop'),
+        onPressed: () {
+
+        },
+      )
+    ]);
   }
 }

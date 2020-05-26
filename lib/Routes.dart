@@ -12,6 +12,7 @@ import 'module/Home.dart';
 import 'module/components/AsynUI.dart';
 import 'module/components/Container.dart';
 import 'module/components/CustomScrollView.dart';
+import 'module/components/dialog/Dialog.dart';
 import 'module/components/EditText.dart';
 import 'module/components/GridView.dart';
 import 'module/components/Progress.dart';
@@ -55,5 +56,6 @@ class Routes {
     "/ChangeMessage": (context) => ChangeMessagePage(),
     "Theme": (context) => ThemeChangePage(),
     "AsynUI": (context) => AsynUIPage(),
+    "Dialog": (context) => DialogPage(),
   };
 }
