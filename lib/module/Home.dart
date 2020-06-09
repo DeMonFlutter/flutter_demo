@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/Routes.dart';
+import 'package:flutter_demo/widget/GradientButton.dart';
 import 'package:flutter_demo/widget/PageBar.dart';
 
 import '../widget/Button.dart';
@@ -27,7 +28,9 @@ class HomePage extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: EdgeInsets.all(5.0),
-            child: Button(context, list[index]),
+            child: GradientButton(list[index], onPressed: () {
+              Navigator.pushNamed(context, list[index]);
+            }),
           );
         },
         itemCount: list.length,

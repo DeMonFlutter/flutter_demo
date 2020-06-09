@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/module/components/Gobang.dart';
 import 'package:flutter_demo/module/components/CheckBox.dart';
 import 'package:flutter_demo/module/components/ImageView.dart';
 import 'package:flutter_demo/module/components/ListView.dart';
+import 'package:flutter_demo/module/components/Notification.dart';
 import 'package:flutter_demo/module/components/Show.dart';
 import 'package:flutter_demo/module/Timer.dart';
+import 'package:flutter_demo/module/components/TurnWidget.dart';
 import 'package:flutter_demo/module/provider/providerpub/ChangeMessage.dart';
 import 'package:flutter_demo/module/provider/providerpub/Message.dart';
 import 'package:flutter_demo/module/theme/ThemeChange.dart';
@@ -12,6 +15,7 @@ import 'module/Home.dart';
 import 'module/components/AsynUI.dart';
 import 'module/components/Container.dart';
 import 'module/components/CustomScrollView.dart';
+import 'module/components/FileOperation.dart';
 import 'module/components/dialog/Dialog.dart';
 import 'module/components/EditText.dart';
 import 'module/components/GridView.dart';
@@ -57,5 +61,9 @@ class Routes {
     "Theme": (context) => ThemeChangePage(),
     "AsynUI": (context) => AsynUIPage(),
     "Dialog": (context) => DialogPage(),
+    "Notification": (context) => NotificationPage(),
+    "TurnWidget": (context) => TurnWidgetPage(),
+    "Gobang": (context) => GobangPage(),
+    "FileOperation": (context) => FileOperationPage(),
   };
 }
