@@ -4,10 +4,10 @@ import 'package:flutter/cupertino.dart';
 /// Created on 2020/4/28.
 /// E-mail 757454343@qq.com
 /// Desc:
-class ShareDataWidget<T> extends InheritedWidget {
-  ShareDataWidget({Key key, @required this.data, Widget child}) : super(key: key, child: child);
+class ShareDataWidget extends InheritedWidget {
+  ShareDataWidget({@required this.data, Widget child}) : super(child: child);
 
-  final T data; //需要在子树中共享的数据，保存点击次数
+  final int data; //需要在子树中共享的数据，保存点击次数
 
   //定义一个便捷方法，方便子树中的widget获取共享数据
   static ShareDataWidget of(BuildContext context) {

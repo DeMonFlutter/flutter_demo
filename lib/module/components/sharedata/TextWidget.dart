@@ -24,7 +24,7 @@ class TestWidgetState extends State<TextWidget> {
       return Text("data null");
     }
 
-    return Text(shareDataWidget?.data?.toString());
+    return Text(shareDataWidget.data.toString());
   }
 
   @override

@@ -4,6 +4,7 @@ import 'package:flutter_demo/Routes.dart';
 import 'package:flutter_demo/module/theme/ColorModel.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'module/components/dialog/ZhCupertinoLocalizations.dart';
 import 'module/provider/providerpub/MsgModel.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SharedPreferences.setMockInitialValues({});
     ColorModel model = Provider.of<ColorModel>(context);
     return MaterialApp(
       localizationsDelegates: [

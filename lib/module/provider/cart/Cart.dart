@@ -19,7 +19,7 @@ class CartPageState extends State<CartPage> {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<CartModel>(
         data: CartModel(),
-        child: CenterScaffold("Cart", <Widget>[
+        child: CenterScaffold("Provider", <Widget>[
           Builder(builder: (context) {
             return Consumer<CartModel>(builder: (context, cart) => Text("总价: ${cart.totalPrice}"));
           }),

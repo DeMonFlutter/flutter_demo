@@ -5,12 +5,10 @@ import 'package:flutter/material.dart';
 /// E-mail 757454343@qq.com
 /// Desc:
 class Button extends RaisedButton {
-  Button(BuildContext context, String text)
+  Button(BuildContext context, String text, {@required VoidCallback onPressed})
       : super(
             child: Text(text),
-            onPressed: () {
-              Navigator.pushNamed(context, text);
-            },
+            onPressed: onPressed,
             color: Theme.of(context).accentColor,
             highlightColor: Theme.of(context).primaryColorDark,
             colorBrightness: Brightness.dark,

@@ -1,3 +1,5 @@
 # flutter_demo
 
-A new Flutter project FlutterDemo.
+[《Flutter实战》](https://book.flutterchina.club)学习Demo代码。  
+
+

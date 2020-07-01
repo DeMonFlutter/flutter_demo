@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/module/components/Gobang.dart';
 import 'package:flutter_demo/module/components/CheckBox.dart';
+import 'package:flutter_demo/module/components/HttpClient.dart';
 import 'package:flutter_demo/module/components/ImageView.dart';
 import 'package:flutter_demo/module/components/ListView.dart';
 import 'package:flutter_demo/module/components/Notification.dart';
@@ -15,6 +16,7 @@ import 'module/Home.dart';
 import 'module/components/AsynUI.dart';
 import 'module/components/Container.dart';
 import 'module/components/CustomScrollView.dart';
+import 'module/components/Dio.dart';
 import 'module/components/FileOperation.dart';
 import 'module/components/dialog/Dialog.dart';
 import 'module/components/EditText.dart';
@@ -37,33 +39,35 @@ import 'module/words/SaveWords.dart';
 class Routes {
   static final routes = {
     "/": (context) => HomePage(),
-    "Words": (context) => RandomWords(),
+    "官方入门Demo": (context) => RandomWords(),
     "/SaveWords": (context) => SaveWordsPage(ModalRoute.of(context).settings.arguments),
-    "Timer": (context) => TimerPage(),
-    "Show": (context) => ShowPage(),
-    "Texts": (context) => TextsPage(),
-    "ImageView": (context) => ImageViewPage(),
-    "CheckBox": (context) => CheckBoxPage(),
-    "EditText": (context) => EditTextPage(),
-    "Progress": (context) => ProgressPage(),
-    "Warp": (context) => WarpPage(),
-    "Container": (context) => ContainerPage(),
-    "Scaffold": (context) => ScaffoldPage(),
-    "ListView": (context) => ListViewPage(),
-    "GridView": (context) => GridViewPage(),
-    "CustomScrollView": (context) => CustomScrollViewPage(),
-    "ScrollController": (context) => ScrollControllerPage(),
-    "WillPopScope": (context) => WillPopScopePage(),
-    "ShareData": (context) => ShareDataPage(),
-    "Cart": (context) => CartPage(),
-    "Message": (context) => MessagePage(),
+    "入门计数Demo": (context) => TimerPage(),
+    "SnackBar组件": (context) => ShowPage(),
+    "Text文本": (context) => TextsPage(),
+    "ImageView图片": (context) => ImageViewPage(),
+    "CheckBox选择框": (context) => CheckBoxPage(),
+    "EditText输入框": (context) => EditTextPage(),
+    "Progress进度条": (context) => ProgressPage(),
+    "Warp自适应布局": (context) => WarpPage(),
+    "Container容器": (context) => ContainerPage(),
+    "Scaffold路由页": (context) => ScaffoldPage(),
+    "ListView列表": (context) => ListViewPage(),
+    "GridView表格": (context) => GridViewPage(),
+    "CustomScrollView沉浸式": (context) => CustomScrollViewPage(),
+    "ScrollController滚动控制": (context) => ScrollControllerPage(),
+    "WillPopScope返回键拦截": (context) => WillPopScopePage(),
+    "InheritedWidget数据共享": (context) => ShareDataPage(),
+    "Provider跨组件状态共享": (context) => CartPage(),
+    "Provider插件页面消息传递": (context) => MessagePage(),
     "/ChangeMessage": (context) => ChangeMessagePage(),
-    "Theme": (context) => ThemeChangePage(),
-    "AsynUI": (context) => AsynUIPage(),
-    "Dialog": (context) => DialogPage(),
-    "Notification": (context) => NotificationPage(),
-    "TurnWidget": (context) => TurnWidgetPage(),
-    "Gobang": (context) => GobangPage(),
-    "FileOperation": (context) => FileOperationPage(),
+    "Theme实现全局换肤": (context) => ThemeChangePage(),
+    "AsynUI异步更新UI": (context) => AsynUIPage(),
+    "Dialog对话框": (context) => DialogPage(),
+    "Notification通知机制": (context) => NotificationPage(),
+    "TurnWidget旋转组件": (context) => TurnWidgetPage(),
+    "Gobang绘制围棋": (context) => GobangPage(),
+    "FileOperation文件操作": (context) => FileOperationPage(),
+    "HttpClient网络请求": (context) => HttpClientPage(),
+    "Dio插件进行网络请求": (context) => DioPage()
   };
 }
