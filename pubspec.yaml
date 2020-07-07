@@ -40,10 +40,20 @@ dependencies:
   fluttertoast: ^4.0.1
   # http
   http: ^0.12.1
+  # dio
+  dio: ^3.0.9
+  # socket
+  web_socket_channel: ^1.1.0
+  #async: ^2.4.0
+  # json
+  json_annotation: ^2.0.0
 
 dev_dependencies:
+  build_runner: ^1.0.0
+  json_serializable: ^2.0.0
   flutter_test:
     sdk: flutter
+
 
 
 # For information on the generic Dart part of this file, see the
@@ -59,8 +69,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/avatar.png
-    - images/cover.jpg
+    - res/images/avatar.png
+    - res/images/cover.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

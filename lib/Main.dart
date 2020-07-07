@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/Routes.dart';
@@ -9,7 +10,17 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'module/components/dialog/ZhCupertinoLocalizations.dart';
 import 'module/provider/providerpub/MsgModel.dart';
 
-void main() => runApp(MyApp());
+var dio = Dio();
+
+void main() {
+  // 配置dio实例
+  dio.options.baseUrl = "https://www.wanandroid.com";
+  dio.options.connectTimeout = 5000; //5s
+  dio.options.receiveTimeout = 3000;
+  dio.interceptors.add(LogInterceptor());
+
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

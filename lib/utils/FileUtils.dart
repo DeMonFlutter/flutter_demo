@@ -16,7 +16,13 @@ class FileUtils {
   static Future<String> getLocalFile() async {
     // 获取应用目录
     String dir = (await getApplicationDocumentsDirectory()).path;
+    print(dir);
     return dir;
+  }
+
+  static Future<String> getFilePath(String filePath) async {
+    File file = await getFile(filePath);
+    return file.path;
   }
 
   static Future<File> getFile(String filePath) async {
@@ -37,5 +43,4 @@ class FileUtils {
     File file = await getFile(filePath);
     return await file.readAsString();
   }
-
 }

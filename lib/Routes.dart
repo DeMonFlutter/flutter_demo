@@ -16,7 +16,8 @@ import 'module/Home.dart';
 import 'module/components/AsynUI.dart';
 import 'module/components/Container.dart';
 import 'module/components/CustomScrollView.dart';
-import 'module/components/Dio.dart';
+import 'module/components/Socket.dart';
+import 'module/components/dio/Dio.dart';
 import 'module/components/FileOperation.dart';
 import 'module/components/dialog/Dialog.dart';
 import 'module/components/EditText.dart';
@@ -68,6 +69,7 @@ class Routes {
     "Gobang绘制围棋": (context) => GobangPage(),
     "FileOperation文件操作": (context) => FileOperationPage(),
     "HttpClient网络请求": (context) => HttpClientPage(),
-    "Dio插件进行网络请求": (context) => DioPage()
+    "Dio插件进行网络请求": (context) => DioPage(),
+    "WebSocket通信": (context) => SocketPage()
   };
 }
