@@ -10,10 +10,13 @@ import 'package:http/http.dart' as http;
 /// Desc:
 class HttpUtils {
   factory HttpUtils() => getInstance();
-  HttpUtils._internal() {}
+
+  HttpUtils._internal();
 
   static HttpUtils _instance;
+
   static HttpUtils get instance => getInstance();
+
   static HttpUtils getInstance() {
     if (_instance == null) {
       _instance = new HttpUtils._internal();
@@ -21,10 +24,8 @@ class HttpUtils {
     return _instance;
   }
 
-  /**
-   * 此处使用WanAndroid开放Api
-   * 注意post请求需要提交表单
-   */
+  ///此处使用WanAndroid开放Api
+  ///   注意post请求需要提交表单
   String baseUrl = 'https://www.wanandroid.com/';
 
   getNoParams(BuildContext context, String url, HttpCallback callback) {

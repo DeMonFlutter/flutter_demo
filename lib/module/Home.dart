@@ -3,7 +3,6 @@ import 'package:flutter_demo/Routes.dart';
 import 'package:flutter_demo/widget/GradientButton.dart';
 import 'package:flutter_demo/widget/PageBar.dart';
 
-import '../widget/Button.dart';
 
 /// @author DeMon
 /// Created on 2020/4/23.

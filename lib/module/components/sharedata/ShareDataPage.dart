@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/widget/CenterScaffold.dart';
 import 'package:flutter_demo/widget/PageBar.dart';
 
 import 'ShareData.dart';

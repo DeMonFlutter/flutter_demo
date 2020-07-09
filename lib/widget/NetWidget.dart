@@ -1,4 +1,3 @@
-import 'package:async/async.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -7,8 +6,6 @@ import 'package:fluttertoast/fluttertoast.dart';
 /// Created on 2020/7/1.
 /// E-mail 757454343@qq.com
 /// Desc:
-
-final AsyncMemoizer _memoizer = AsyncMemoizer();
 
 class NetWidget extends StatelessWidget {
   NetWidget(this.future);

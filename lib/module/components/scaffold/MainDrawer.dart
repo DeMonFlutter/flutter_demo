@@ -20,7 +20,7 @@ class MainDrawer extends StatelessWidget {
                   children: <Widget>[
                     Padding(
                       padding: EdgeInsets.only(right: 16.0),
-                      child: ClipOval(child: Image.asset("images/avatar.png", width: 80)),
+                      child: ClipOval(child: Image.asset("res/images/avatar.png", width: 80)),
                     ),
                     Text("DeMon", style: TextStyle(fontWeight: FontWeight.bold))
                   ],

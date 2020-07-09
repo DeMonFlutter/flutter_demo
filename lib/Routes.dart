@@ -17,6 +17,7 @@ import 'module/components/AsynUI.dart';
 import 'module/components/Container.dart';
 import 'module/components/CustomScrollView.dart';
 import 'module/components/Socket.dart';
+import 'module/components/WebView.dart';
 import 'module/components/dio/Dio.dart';
 import 'module/components/FileOperation.dart';
 import 'module/components/dialog/Dialog.dart';
@@ -70,6 +71,7 @@ class Routes {
     "FileOperation文件操作": (context) => FileOperationPage(),
     "HttpClient网络请求": (context) => HttpClientPage(),
     "Dio插件进行网络请求": (context) => DioPage(),
-    "WebSocket通信": (context) => SocketPage()
+    "WebSocket通信": (context) => SocketPage(),
+    "WebView网页": (context) => WebViewPage(),
   };
 }

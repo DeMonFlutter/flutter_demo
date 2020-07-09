@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/utils/FileUtils.dart';
 
 /// @author DeMon
 /// Created on 2020/4/23.
@@ -32,8 +31,6 @@ class DioDownloadPageState extends State<DioDownloadPage> {
           if (snapshot.hasError) {
             return Text(snapshot.error.toString());
           }
-          //请求成功，通过项目信息构建用于显示项目名称的ListView
-          Response response = snapshot.data;
           return  Image.file(File("/data/user/0/com.example.flutter_demo/app_flutter/demon1.jpg"));
         }
         //请求未完成时弹出loading

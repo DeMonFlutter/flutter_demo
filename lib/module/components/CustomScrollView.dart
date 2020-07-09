@@ -16,7 +16,8 @@ class CustomScrollViewPageState extends State<CustomScrollViewPage> {
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
-              pinned: true, expandedHeight: 250, flexibleSpace: FlexibleSpaceBar(title: Text("CustomScrollView"), background: Image.asset("images/cover.jpg", fit: BoxFit.cover))),
+              pinned: true, expandedHeight: 250, flexibleSpace: FlexibleSpaceBar(title: Text("CustomScrollView"), background: Image.asset("res/images/cover.jpg", fit: BoxFit
+              .cover))),
           SliverPadding(
             padding: EdgeInsets.all(8.0),
             sliver: SliverGrid(

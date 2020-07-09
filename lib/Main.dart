@@ -5,7 +5,6 @@ import 'package:flutter_demo/Routes.dart';
 import 'package:flutter_demo/module/theme/ColorModel.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import 'module/components/dialog/ZhCupertinoLocalizations.dart';
 import 'module/provider/providerpub/MsgModel.dart';
@@ -18,6 +17,9 @@ void main() {
   dio.options.connectTimeout = 5000; //5s
   dio.options.receiveTimeout = 3000;
   dio.interceptors.add(LogInterceptor());
+
+  //平台统一
+  //debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
 
   runApp(MyApp());
 }
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    SharedPreferences.setMockInitialValues({});
+    //SharedPreferences.setMockInitialValues({});
     ColorModel model = Provider.of<ColorModel>(context);
     return MaterialApp(
       localizationsDelegates: [
