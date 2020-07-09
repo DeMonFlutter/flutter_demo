@@ -40,9 +40,11 @@ class MyApp extends StatelessWidget {
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    //SP初始化赋值
     //SharedPreferences.setMockInitialValues({});
     ColorModel model = Provider.of<ColorModel>(context);
     return MaterialApp(
+      title: "Demon",
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
