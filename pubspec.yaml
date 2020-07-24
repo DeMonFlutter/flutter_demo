@@ -44,15 +44,11 @@ dependencies:
   dio: ^3.0.9
   # socket
   web_socket_channel: ^1.1.0
-  #async: ^2.4.0
-  # json
-  json_annotation: ^2.0.0
   # webview
   webview_flutter: ^0.3.22+1
 
 dev_dependencies:
   build_runner: ^1.0.0
-  json_serializable: ^2.0.0
   flutter_test:
     sdk: flutter
 

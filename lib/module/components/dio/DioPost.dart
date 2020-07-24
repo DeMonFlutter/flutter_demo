@@ -15,7 +15,6 @@ class DioPostPage extends StatefulWidget {
 
 class DioPostPageState extends State<DioPostPage> {
   var futureBuilder = FutureBuilder(
-      // ignore: top_level_instance_method
       future: dio.post("/user/login", data: new FormData.fromMap({'username': 'DeMon', 'password': 'lh1995623'})),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         //请求完成
