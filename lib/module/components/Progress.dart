@@ -26,10 +26,7 @@ class ProgressPageState extends State<ProgressPage> with SingleTickerProviderSta
 
   @override
   Widget build(BuildContext context) {
-    const spinkit = SpinKitFadingCube(
-      color: Colors.blue,
-      size: 100.0,
-    );
+    final spinkit = SpinKitRotatingCircle(color: Colors.blue, size: 100.0);
     final bodys = <Widget>[
       Padding(
         padding: EdgeInsets.all(28.0),
