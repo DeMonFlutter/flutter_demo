@@ -155,9 +155,7 @@ class DialogUtil {
         });
   }
 
-  /**
-   * http加载框 1.拦截返回框 2.空白区域点击不消失
-   */
+  /// http加载框 1.拦截返回框 2.空白区域点击不消失
   static showHttpDialog(BuildContext context) {
     showDialog(
         context: context,
